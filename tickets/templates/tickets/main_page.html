@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+</head>
+<body>
+{% if menu %}
+<ul>
+    {% for link, service in menu.items %}
+    <li><a target="_blank" href="/get_ticket/{{ link }}/">{{ service }}</a></li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+</body>
+</html>
